@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: keepalived-exporter
+  description: Forked from https://github.com/mehdy/keepalived-exporter
+  annotations:
+    github.com/project-slug: Bandwidth/keepalived-exporter
+    bandwidth.com/environment: production
+  organization: BW
+  costCenter: Technology - Network Engineering
+  platformType: undefined
+  buildPlatform: GitHub Actions
+spec:
+  type: Service
+  owner: github/band-platform
+  lifecycle: Prototype
+  dependsOn:
+    - resource:platform/GitHub Actions
+    - resource:cost-center/Technology - Network Engineering
